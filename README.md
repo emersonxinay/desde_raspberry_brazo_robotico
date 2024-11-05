@@ -69,3 +69,29 @@ Conectarse a la Raspberry Pi usando CMD en Windows
    ```bash
    ssh pi@direccion_ip_de_tu_raspberry
    ```
+
+## Prueba de Servos con PCA9685
+```bash
+pip install adafruit-circuitpython-pca9685
+``` 
+```bash
+pip install adafruit-circuitpython-board
+```
+```bash
+pip install adafruit-circuitpython-busio
+
+```
+## habilitar I2C para controlar servos 
+```bash
+sudo raspi-config
+``` 
+- Navega a Interfacing Options.
+- Selecciona I2C y aseg�rate de habilitarlo.
+- Sal del men� y reinicia tu Raspberry Pi.
+
+
+
+Para instalar los modulos 
+```bash
+   pip install -r requirements.txt
+```
