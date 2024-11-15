@@ -9,8 +9,8 @@ pca = PCA9685(i2c)
 pca.frequency = 50  # Frecuencia de 50Hz para los servos
 
 # Configuraci�n de los canales para los dos servos
-servo1 = pca.channels[0]  # Servo 1 en el canal 0
-servo2 = pca.channels[1]  # Servo 2 en el canal 1
+servo1 = pca.channels[1]  # Servo 1 en el canal 0
+servo2 = pca.channels[2]  # Servo 2 en el canal 1
 
 def set_servo_angle(channel, angle):
     pulse_min = 1000  # Ajusta seg�n la especificaci�n de tu servo

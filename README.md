@@ -81,14 +81,43 @@ pip install adafruit-circuitpython-board
 pip install adafruit-circuitpython-busio
 
 ```
-## habilitar I2C para controlar servos 
+## habilitar VNC y  I2C para controlar servos 
 ```bash
 sudo raspi-config
 ``` 
+### activar vnc una vez ingresado desde cmd
+
+Navega a Interface Options > VNC y selecciona Enable para activar el servidor VNC.
+
+### para activar I2C de servos
 - Navega a Interfacing Options.
 - Selecciona I2C y aseg�rate de habilitarlo.
 - Sal del men� y reinicia tu Raspberry Pi.
 
+### actualizar el rasbian desde vnc 
+```bash
+sudo apt update
+sudo apt upgrade
+
+```
+### Para instalar Visual Studio Code 
+descargar
+```bash
+wget https://code.visualstudio.com/sha/download?build=stable&os=deb-arm64 -O code_arm64.deb
+
+```
+o desde su pagina oficial de vscode 
+
+instalar
+```bash
+sudo dpkg -i /ruta/a/code_<versi�n>.deb
+
+```
+y si hay errores
+````bash
+sudo apt --fix-broken install
+
+````
 
 
 Para instalar los modulos 
